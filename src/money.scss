@@ -1,0 +1,9 @@
+@import 'globals';
+
+.Money.positive {
+  color: $green;
+}
+
+.Money.negative {
+  color: $red;
+}

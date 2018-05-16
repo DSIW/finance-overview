@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "csv": "^3.0.2",
+    "dayjs": "^1.5.24",
+    "fs": "0.0.1-security",
+    "googleapis": "^30.0.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-md": "^1.2.8",
     "react-router-dom": "^4.2.2",
+    "recharts": "^1.0.0-beta.10",
+    "server-destroy": "^1.0.1",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {

@@ -1,0 +1,47 @@
+[
+    {
+        "split_transaction": "",
+        "date": "2018-01-01",
+        "payee_payer": "Supermarket",
+        "income": "0",
+        "expense": "20,00",
+        "category": "Lebensmittel",
+        "subcategory": "Shop",
+        "notes": "",
+        "payment_method": "",
+        "status": "",
+        "reference number": "",
+        "picture": "",
+        "": null
+    },
+    {
+        "split_transaction": "",
+        "date": "2018-02-01",
+        "payee_payer": "Supermarket",
+        "income": "0",
+        "expense": "18,80",
+        "category": "Lebensmittel",
+        "subcategory": "Shop",
+        "notes": "",
+        "payment_method": "",
+        "status": "",
+        "reference number": "",
+        "picture": "",
+        "": null
+    },
+    {
+        "split_transaction": "",
+        "date": "2018-03-01",
+        "payee_payer": "Cafe",
+        "income": "0",
+        "expense": "6,70",
+        "category": "Lebensmittel",
+        "subcategory": "Restaurant",
+        "notes": "",
+        "payment_method": "",
+        "status": "",
+        "reference number": "",
+        "picture": "",
+        "": null
+    }
+]
