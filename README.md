@@ -1,6 +1,6 @@
-# Transactions Visualizer
+# Finance overview
 
-Visualizer for transactions from the Android app MyExpenses
+Visualizer for transactions from the Android app [MyExpenses](https://play.google.com/store/apps/details?id=org.totschnig.myexpenses)
 
 ## Requirements
 
