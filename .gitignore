@@ -24,3 +24,4 @@ yarn-error.log*
 src/**/*.css
 
 data/*.csv
+src/data/transactions.json
