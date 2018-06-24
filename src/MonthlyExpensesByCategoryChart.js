@@ -7,6 +7,10 @@ export default class MonthlyExpensesByCategoryChart extends Component {
       return (number < 10) ? `0${number}` : `${number}`;
   }
 
+  toMonths(milliseconds) {
+      return Math.floor(milliseconds / 1000 / 60 / 60 / 24 / 30);
+  }
+
   sum(values) {
     return values.reduce((sum, value) => sum += value, 0);
   }
@@ -18,6 +22,8 @@ export default class MonthlyExpensesByCategoryChart extends Component {
 
   prepareChartData(transactions) {
     const categoryProp = this.props.category;
+
+    const numMonths = Math.max(1, this.toMonths(new Date() - transactions[0].date));
 
     let transactionsByCatAndMonth = {};
     transactions.forEach(({date, category, subcategory, income, expense, value}) => {
@@ -46,11 +52,11 @@ export default class MonthlyExpensesByCategoryChart extends Component {
 
     const data = [];
     Object.entries(transactionsByCatAndMonth).forEach(([cat, transactionsByMonth]) => {
-      const incomes  = Object.entries(transactionsByMonth).map(([month, {income}]) => income);
-      const income = roundPrice(this.avg(incomes));
+      const incomes = Object.entries(transactionsByMonth).map(([month, {income}]) => income);
+      const income = roundPrice(this.sum(incomes) / numMonths);
 
       const expenses = Object.entries(transactionsByMonth).map(([month, {expense}]) => expense);
-      const expense = roundPrice(this.avg(expenses));
+      const expense = roundPrice(this.sum(expenses) / numMonths);
 
       data.push({category: cat, income, expense});
     })
